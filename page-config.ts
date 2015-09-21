@@ -1,19 +1,19 @@
 # Einstellungen für das Kopieren und Anlegen von Seiten
 ##################
 TCEMAIN.table.pages {
-    disablePrependAtCopy = 1
-    disableHideAtCopy = 1
+	disablePrependAtCopy = 1
+	disableHideAtCopy = 1
 }
 TCEMAIN.table.tt_content {
-    disablePrependAtCopy = 1
-    disableHideAtCopy = 1
+	disablePrependAtCopy = 1
+	disableHideAtCopy = 1
 }
 
 # Setzen der Seitenbaumrechte per TypoScript
 TCEMAIN {
-  # Besitzergruppe festlegen (ID der Gruppe „Seitenbaumrechte“):
-    # permissions.groupid = 1
-    permissions.groupid = 1
+	# Besitzergruppe festlegen (ID der Gruppe „Seitenbaumrechte“):
+	# permissions.groupid = 1
+	permissions.groupid = 1
 }
 
 # Überflüssige Felder ausblenden
@@ -31,18 +31,18 @@ TCEFORM.tt_content {
 }
 
 # Inhalt der Typ Select box bei content Elementen
-  TCEFORM.tt_content {
-        layout{
-            altLabels{
-                0 = Normales Element
-                1 = Große Box
-                2 = Kleine Box
-            }
-            removeItems = 3,4,5,6,7,8,9,10
-        }
-    }
+	TCEFORM.tt_content {
+		layout{
+			altLabels{
+				0 = Normales Element
+				1 = Große Box
+				2 = Kleine Box
+			}
+			removeItems = 3,4,5,6,7,8,9,10
+		}
+	}
 
 mod.SHARED {
- defaultLanguageLabel = Default (German)
- defaultLanguageFlag = de.gif # zu finden unter /typo3/gfx/flags/
+	defaultLanguageLabel = Default (German)
+	defaultLanguageFlag = de.gif # zu finden unter /typo3/gfx/flags/
 }

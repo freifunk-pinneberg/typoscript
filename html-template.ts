@@ -33,19 +33,19 @@ page.includeCSS.main.media = all
 
 # Bilder sollen keine Breite oder Höhe bekommen
 tt_content.image.20.stdWrap.parseFunc.nonTypoTagStdWrap.HTMLparser.tags.img.fixAttrib {
-    width.unset = 1
-    height.unset = 1
-    style.unset = 1
+	width.unset = 1
+	height.unset = 1
+	style.unset = 1
 }
 tt_content.textpic.20.stdWrap.parseFunc.nonTypoTagStdWrap.HTMLparser.tags.img.fixAttrib {
-    width.unset = 1
-    height.unset = 1
-    style.unset = 1
+	width.unset = 1
+	height.unset = 1
+	style.unset = 1
 }
 lib.parseFunc_RTE.nonTypoTagStdWrap.HTMLparser.tags.img.fixAttrib {
-    width.unset = 1
-    height.unset = 1
-    style.unset = 1
+	width.unset = 1
+	height.unset = 1
+	style.unset = 1
 }
 
 # default css entfernen
@@ -59,12 +59,12 @@ content.defaultHeaderType = 2
 
 #Überschriften von Klassen Attribut befreien
 lib.stdheader {
-    10.1.fontTag = |
-    10.2.fontTag = |
-    10.3.fontTag = |
-    10.4.fontTag = |
-    10.5.fontTag = |
-    stdWrap.dataWrap = |
+	10.1.fontTag = |
+	10.2.fontTag = |
+	10.3.fontTag = |
+	10.4.fontTag = |
+	10.5.fontTag = |
+	stdWrap.dataWrap = |
 }
 
 #csc-header entfernen
@@ -87,45 +87,45 @@ tt_content.menu.20.4.1.wrap >
 
 tt_content.menu.20.4.1.NO.wrapItemAndSub = |
 tt_content.menu.20.4.1.NO {
-  linkWrap = |
-  allWrap = <section class="bloglist-item" itemscope itemtype="http://schema.org/BlogPosting">|</section>
-  ATagBeforeWrap = 0
-  doNotLinkIt = 1
-  stdWrap.htmlSpecialChars = 0
-  stdWrap.typolink.parameter.field = uid
-  stdWrap.cObject = COA
-  stdWrap.cObject {
-    # Untertitel 
-    20 = TEXT
-    20 {
-      field = crdate
-      strftime = %d.%m.%Y
-      wrap = <span class="date" itemprop="dateCreated">|</span>
-    }
+	linkWrap = |
+	allWrap = <section class="bloglist-item" itemscope itemtype="http://schema.org/BlogPosting">|</section>
+	ATagBeforeWrap = 0
+	doNotLinkIt = 1
+	stdWrap.htmlSpecialChars = 0
+	stdWrap.typolink.parameter.field = uid
+	stdWrap.cObject = COA
+	stdWrap.cObject {
+		# Untertitel 
+		20 = TEXT
+		20 {
+			field = crdate
+			strftime = %d.%m.%Y
+			wrap = <span class="date" itemprop="dateCreated">|</span>
+		}
 		# Titel 
-    10 = TEXT
-    10 {
-      field = title
-      wrap = <h4 class="title">|</h4>
-      
-    }
-    # Inhaltsangabe (Abstract)
-    30 = TEXT
-    30 {
-      field = abstract
-      htmlSpecialChars = 1
-      wrap = <div class="text" itemprop="description">|</div>
-    }
-  }
+		10 = TEXT
+		10 {
+			field = title
+			wrap = <h4 class="title">|</h4>
+			
+		}
+		# Inhaltsangabe (Abstract)
+		30 = TEXT
+		30 {
+			field = abstract
+			htmlSpecialChars = 1
+			wrap = <div class="text" itemprop="description">|</div>
+		}
+	}
 }
 
 # Typo3 Layout Optionen Content-Elemente
-    tt_content.stdWrap.innerWrap.cObject = CASE
-    tt_content.stdWrap.innerWrap.cObject {
-        key.field = layout
-        1 = TEXT
-        1.value = <div class="csc-default big-box">|</div>
+		tt_content.stdWrap.innerWrap.cObject = CASE
+		tt_content.stdWrap.innerWrap.cObject {
+				key.field = layout
+				1 = TEXT
+				1.value = <div class="csc-default big-box">|</div>
 
-        2 = TEXT
-        2.value = <div class="csc-default small-box">|</div>
-    }
+				2 = TEXT
+				2.value = <div class="csc-default small-box">|</div>
+		}

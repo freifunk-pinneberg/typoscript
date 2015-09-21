@@ -49,7 +49,7 @@ config.noPageTitle = 2
 page.headerData.10 = TEXT
 page.headerData.10.field = title
 page.headerData.10.noTrimWrap = | <title>| - Freifunk Pinneberg</title> |
-page.headerData.10.insertData =  1
+page.headerData.10.insertData =	1
 
 ## ------ Facebook ---------------------
 page.headerData.20 = TEXT
@@ -71,64 +71,64 @@ plugin.tq_seo.metaTags.publisher = Freifunk Pinneberg
 lib.navigation.10 = HMENU
 lib.navigation.10 {
 
-    entryLevel = 0
+	entryLevel = 0
 
-    #special = directory
-    #special.value = -1 #{TSFE:page|pid}
+	#special = directory
+	#special.value = -1 #{TSFE:page|pid}
 
-    1 = TMENU
-    1.wrap = <ul> | </ul>
-    #1.expAll = 1
-    1 {
-        noBlur = 1
-        NO {
-          subst_elementUid = 1
-          allWrap = <li id="link{elementUid}" class="first">| |*| <li id="link{elementUid}">| |*| <li id="link{elementUid}" class="last">|
-          wrapItemAndSub = |</li>
-          #ATagTitle.field = subtitle
-        }
-        ACT = 1
-        ACT {
-          subst_elementUid = 1
-          allWrap = <li id="link{elementUid}" class="first active first_active">| |*| <li id="link{elementUid}" class="active">| |*| <li id="link{elementUid}" class="last active last_active">|
-          wrapItemAndSub = |</li>
-          #ATagTitle.field = subtitle
-        }
-    }
+	1 = TMENU
+	1.wrap = <ul> | </ul>
+	#1.expAll = 1
+	1 {
+			noBlur = 1
+			NO {
+				subst_elementUid = 1
+				allWrap = <li id="link{elementUid}" class="first">| |*| <li id="link{elementUid}">| |*| <li id="link{elementUid}" class="last">|
+				wrapItemAndSub = |</li>
+				#ATagTitle.field = subtitle
+			}
+			ACT = 1
+			ACT {
+				subst_elementUid = 1
+				allWrap = <li id="link{elementUid}" class="first active first_active">| |*| <li id="link{elementUid}" class="active">| |*| <li id="link{elementUid}" class="last active last_active">|
+				wrapItemAndSub = |</li>
+				#ATagTitle.field = subtitle
+			}
+	}
 }
 
 ## -------- Node Counter ------------
 lib.nodecounter = COA
 lib.nodecounter {
-    10 < plugin.tx_ffpinodecounter_pi1
+	10 < plugin.tx_ffpinodecounter_pi1
 }
 
 ## -------- Footer Navigation -------
 lib.footernavigation.10 = HMENU
 lib.footernavigation.10 {
 
-    entryLevel = 0
+	entryLevel = 0
 
-    special = directory
-    special.value = 34 #{TSFE:page|pid}
+	special = directory
+	special.value = 34 #{TSFE:page|pid}
 
-    1 = TMENU
-    1.wrap = <ul> | </ul>
-    #1.expAll = 1
-    1 {
-        noBlur = 1
-        NO {
-          subst_elementUid = 1
-          allWrap = <li id="link{elementUid}" class="first">| |*| <li id="link{elementUid}">| |*| <li id="link{elementUid}" class="last">|
-          wrapItemAndSub = |</li>
-        }
-        ACT = 1
-        ACT {
-          subst_elementUid = 1
-          allWrap = <li id="link{elementUid}" class="first active first_active">| |*| <li id="link{elementUid}" class="active">| |*| <li id="link{elementUid}" class="last active last_active">|
-          wrapItemAndSub = |</li>
-        }
-    }
+	1 = TMENU
+	1.wrap = <ul> | </ul>
+	#1.expAll = 1
+	1 {
+			noBlur = 1
+			NO {
+				subst_elementUid = 1
+				allWrap = <li id="link{elementUid}" class="first">| |*| <li id="link{elementUid}">| |*| <li id="link{elementUid}" class="last">|
+				wrapItemAndSub = |</li>
+			}
+			ACT = 1
+			ACT {
+				subst_elementUid = 1
+				allWrap = <li id="link{elementUid}" class="first active first_active">| |*| <li id="link{elementUid}" class="active">| |*| <li id="link{elementUid}" class="last active last_active">|
+				wrapItemAndSub = |</li>
+			}
+	}
 }
 
 ## ---------- Analytics --------
@@ -136,19 +136,17 @@ page.footerData.50 = TEXT
 page.footerData.50.value (
 <!-- Piwik -->
 <script type="text/javascript">
-  var _paq = _paq || [];
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="/piwik/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', 1]);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
+	var _paq = _paq || [];
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() {
+		var u="/piwik/";
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', 1]);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	})();
 </script>
 <noscript><p><img src="/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
 <!-- End Piwik Code -->
 )
-
-
