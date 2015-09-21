@@ -97,6 +97,12 @@ lib.navigation.10 {
     }
 }
 
+## -------- Node Counter ------------
+lib.nodecounter = COA
+lib.nodecounter {
+    10 < plugin.tx_ffpinodecounter_pi1
+}
+
 ## -------- Footer Navigation -------
 lib.footernavigation.10 = HMENU
 lib.footernavigation.10 {
