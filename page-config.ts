@@ -43,6 +43,6 @@ TCEFORM.tt_content {
 	}
 
 mod.SHARED {
-	defaultLanguageLabel = Default (German)
-	defaultLanguageFlag = de.gif # zu finden unter /typo3/gfx/flags/
+	defaultLanguageLabel = Deutsch
+	defaultLanguageFlag = de
 }
