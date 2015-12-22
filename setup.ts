@@ -107,7 +107,7 @@ lib.donation = COA
 lib.donation {
 	10 = TEXT
 	10.value (
-	<div class="donation">
+	<div class="donation-overlay">
 	)
 	
 	20 = TEXT
