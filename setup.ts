@@ -68,6 +68,7 @@ plugin.tq_seo.metaTags.robotsYdir = 0
 plugin.tq_seo.metaTags.publisher = Freifunk Pinneberg
 
 ## -------- Navigation -----------------
+includeLibs.user_modifyToExternalUrl = fileadmin/user_functions/user_modifyToExternalUrl.php
 lib.navigation.10 = HMENU
 lib.navigation.10 {
 
@@ -86,6 +87,7 @@ lib.navigation.10 {
 				allWrap = <li id="link{elementUid}" class="first">| |*| <li id="link{elementUid}">| |*| <li id="link{elementUid}" class="last">|
 				wrapItemAndSub = |</li>
 				#ATagTitle.field = subtitle
+				allStdWrap.postUserFunc = user_functions->user_modifyToExternalUrl
 			}
 			ACT = 1
 			ACT {
@@ -136,6 +138,7 @@ lib.footernavigation.10 {
 				subst_elementUid = 1
 				allWrap = <li id="link{elementUid}" class="first">| |*| <li id="link{elementUid}">| |*| <li id="link{elementUid}" class="last">|
 				wrapItemAndSub = |</li>
+				allStdWrap.postUserFunc = user_functions->user_modifyToExternalUrl
 			}
 			ACT = 1
 			ACT {
